@@ -1,6 +1,10 @@
 import express, { json }  from "express";
 // import { connectDB } from "./config/db";
-import dotenv from "dotenv"
+import dotenv from "dotenv";
+import cors from "cors";
+
+app.use(cors());
+app.use(json());
 
 
 dotenv.config();
